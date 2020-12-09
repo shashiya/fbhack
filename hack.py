@@ -1,5 +1,4 @@
 #!usr/bin/python2
-# coding: Hard Killer
 # created   : shashiya
 # date      : 29 November 2020
 # time      : 09:00
