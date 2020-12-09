@@ -35,7 +35,7 @@ try:
     import requests
 except ImportError:
     os.system('pip2 install requests')
-    os.system('python2 main.py')
+    os.system('python2 hack.py')
 
 from requests.exceptions import ConnectionError
 from mechanize import Browser
@@ -70,10 +70,8 @@ logo = """
        |_____||__|\_| |__|  |__|__|
                             
 
-           [\033[41;1m DK Tools Hacking \033[00;1m]
+           [\033[41;1m Tool By Shashiya \033[00;1m]
 
-\033[32;1mcreated \033[33;1m: \033[37;1mTegar ID
-\033[32;1mversi   \033[33;1m: \033[37;1m1.0
 
 """
 back = 0
@@ -116,7 +114,7 @@ def asup():
         os.system("clear")
         os.system("git pull")
         balik = raw_input("\033[31;1m[<back>]")
-        os.system("python2 main.py")
+        os.system("python2 hack.py")
     elif milih == '0' or milih == '00':
         keluar()
     else:
@@ -138,7 +136,7 @@ def report():
     pesan = raw_input('\033[32;1mMassage? \033[34;1m: \033[37;1m')
     pesan.replace(' ', '%20')
     try:
-        sp.check_output(['am', 'start', 'https://api.whatsapp.com/send?phone=6282125068665&text=Report: ' + pesan + ''])
+        sp.check_output(['am', 'start', 'https://api.whatsapp.com/send?phone=94761115702&text=Report: ' + pesan + ''])
     except:
         sys.exit()
     exit('\033[31;1mthanks report bug to me')
@@ -268,7 +266,7 @@ def spamkomen():
     except IOError:
         print '\033[37;1m[\033[31;1m!\033[37;1m] Token invalid'
         os.system('rm -rf login.txt')
-        os.system('python2 main.py')
+        os.system('python2 hack.py')
     os.system("clear")
     print logo
     post = raw_input("\033[32;1mID Post \033[34;1m=> \033[37;1m")
@@ -442,7 +440,7 @@ def crack_post():
     print '\033[37;1m{\033[32;1m*\033[37;1m}Sucess     : ' + str(len(oks))
     print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
     balik = raw_input('\n[<back>]\n')
-    os.system('python2 main.py')
+    os.system('python2 hack.py')
 
 # tools scan domain
 def scandomain():
@@ -491,7 +489,7 @@ def dumpid():
         print '\033[37;1m[\033[31;1m!\033[37;1m] Token not found'
         os.system('rm -rf login.txt')
         time.sleep(0.01)
-        os.system("python2 main.py")
+        os.system("python2 hack.py")
     try:
         os.mkdir('done')
     except OSError:
@@ -517,7 +515,7 @@ def dumpid():
         print '\r\033[32;1mFile Save \033[33;1m: \033[37;1mdone/' + simpen
         print '\033[31;1m[\033[33;1m+\033[31;1m]'+40*'\033[33;1m─'+'\033[31;1m[\033[33;1m+\033[31;1m]'
         balik = raw_input('\033[31;1m[<back>]')
-        os.system('python2 main.py')
+        os.system('python2 hack.py')
     except IOError:
         print "\033[37;1m[\033[31;1m!\033[37;1m] dont't create file "
         balik = raw_input('\033[31;1m[<back>]')
@@ -533,7 +531,7 @@ def dumpid():
     except OSError:
         print "\033[37;1m[\033[31;1m!\033[37;1m] Don't save"
         balik = raw_input('\n\033[31;1m[<back>]\n')
-        os.system('python2 main.py')
+        os.system('python2 hack.py')
     except requests.exceptions.ConnectionError:
         print '\033[37;1m[\033[31;1m!\033[37;1m] Conection Error !'
         keluar()
